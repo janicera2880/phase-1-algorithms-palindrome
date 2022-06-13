@@ -1,13 +1,28 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+ function isPalindrome(word) {
+  
+let trueWord = [];
+for (i of word) {
+trueWord.unshift(i);
 }
+ if (trueWord.join('') === word) {
+return true
+} else {return false}
+}
+isPalindrome('racecar')
 
+
+
+//Write A Function With An Argument Of Word And Expect True If The "String" Is Palindrome Otherwise False
 /* 
-  Add your pseudocode here
+  A Palindrome is a word that's spelled the same way both forward and backward.
 */
 
 /*
-  Add written explanation of your solution here
+ Step 1. Convert the string into an array.
+ Step 2. Iterate through each element using for loop. For each character at position i, we compare with the character at position i from the end.
+ Step 3. Remove first element of array using unshift()
+ Step 4. Use join to concatenate the elements together as a string.
+ Step 5. If it does not equal, string is not palindrome.
 */
 
 // You can run `node index.js` to view these console logs
